@@ -1,4 +1,6 @@
-use anyhow::Result;
+use std::str::FromStr;
+
+use anyhow::{anyhow, Result};
 use reqwest::Url;
 use structopt::StructOpt;
 
@@ -26,9 +28,42 @@ fn parse_url(s: &str) -> Result<String> {
 #[derive(Debug, StructOpt)]
 pub struct Post {
     /// HTTP 请求的URL
+    #[structopt(parse(try_from_str = parse_url))]
     url: String,
     /// HTTP 请求的body
-    body: Vec<String>,
+    #[structopt(parse(try_from_str = parse_kv_pair))]
+    body: Vec<KvPair>,
+}
+
+/// 命令行中的key=value 可以通过parse_kv_pair解析成KvPair结构
+#[derive(Debug)]
+struct KvPair {
+    k: String,
+    v: String,
+}
+
+
+impl FromStr for KvPair {
+    type Err = anyhow::Error;
+
+    fn from_str(s: &str) -> Result<Self, Self::Err> {
+        // 使用 = 进行split, 这会得到一个迭代器
+        let mut split = s.split("=");
+        let err = || anyhow!(format!("Failed to parse {}", s));
+
+        Ok(Self {
+            // 从迭代器中取第一个结果作为key，迭代器返回Some(T)/None
+            // 我们将其转换成Ok(T)/Err(E), 然后用?处理错误
+            k: (split.next().ok_or_else(err)?).to_string(),
+            // 从迭代器中取第二个结果作为value
+            v: (split.next().ok_or_else(err)?).to_string(),
+        })
+    }
+}
+
+/// 因为为KyPair实现了FromStr,这里可以直接使用s.parse()得到KvPair
+fn parse_kv_pair(s: &str) -> Result<KvPair> {
+    Ok(s.parse()?)
 }
 
 // 子命令分别对应不同的HTTP方法，目前只支持get / post
