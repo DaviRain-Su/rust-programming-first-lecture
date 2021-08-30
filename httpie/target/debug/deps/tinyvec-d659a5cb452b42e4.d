@@ -1,0 +1,11 @@
+/Users/davirain/davirain/rust-programming-first-lecture/httpie/target/debug/deps/tinyvec-d659a5cb452b42e4.rmeta: /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/lib.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array/generated_impl.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec_drain.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/slicevec.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/tinyvec.rs
+
+/Users/davirain/davirain/rust-programming-first-lecture/httpie/target/debug/deps/tinyvec-d659a5cb452b42e4.d: /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/lib.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array/generated_impl.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec_drain.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/slicevec.rs /Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/tinyvec.rs
+
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/lib.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/array/generated_impl.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/arrayvec_drain.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/slicevec.rs:
+/Users/davirain/.cargo/registry/src/github.com-1ecc6299db9ec823/tinyvec-1.3.1/src/tinyvec.rs:
